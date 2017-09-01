@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse</title>
+    
+    <style>
+        * {margin: 0; padding: 0;}
+        
+        #dark, #pulsar1, #pulsar2, #pulsar3 {
+            position: absolute;
+        }
+        
+        #dark {
+            width: 100vw;
+            height: 100vh;
+            background-color: black;   
+            z-index: 1;
+        }    
+        
+        
+        #pulsar1 {
+            width: 100px;
+            height: 100px;
+            border: 50px solid greenyellow;
+            border-radius: 50%;
+            color: greenyellow;
+            z-index: 2;
+            box-sizing: border-box;
+            top: 45%;
+            left: 15%;
+            animation: animateFirst 2000ms linear infinite alternate; 
+        }
+        
+        #pulsar2 {
+            width: 100px;
+            height: 100px;
+            border: 50px solid red;
+            border-radius: 50%;
+            color: red;
+            z-index: 2;
+            box-sizing: border-box;
+            top: 45%;
+            left: 45%;
+            animation: animateSecond 2000ms linear infinite alternate;
+        }
+        
+        #pulsar3 {
+            width: 100px;
+            height: 100px;
+            border: 50px solid deepskyblue;
+            border-radius: 50%;
+            color: deepskyblue;
+            z-index: 2;
+            box-sizing: border-box;
+            top: 45%;
+            left: 75%;
+            animation: animateThird 2000ms linear infinite alternate;
+        }
+        
+       
+        
+        @keyframes animateFirst {
+            0% {
+                border: 50px solid greenyellow;
+                opacity: 0;
+            }
+            
+            100% {
+                border: 50px solid greenyellow;
+                opacity: 1;
+            }
+            
+        }
+    
+      @keyframes animateSecond {
+            0% {
+                
+            }
+        
+            50% {border: 50px solid red;
+                opacity: 0;
+            }
+        
+          100% {border: 50px solid red;
+                opacity: 1;
+            }
+        }
+        
+        
+          @keyframes animateThird {
+            0% {
+                
+            }
+        
+            75% {border: 50px solid deepskyblue;
+                opacity: 0;
+            }
+        
+          100% {border: 50px solid deepskyblue;
+                opacity: 1;
+            }
+        }
+        
+        
+        
+    </style>
+    
+</head>
+
+<body>
+    <div id="dark"></div>
+    <div id="pulsar1"></div>
+    <div id="pulsar2"></div>
+    <div id="pulsar3"></div>
+   
+</body>
+</html>
